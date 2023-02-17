@@ -119,19 +119,19 @@ header a{
     padding: 5px 10 px;
     font-size: 20px;
 }
-.productos .carrusel{
+.carrusel{
     width: 990px;
     margin: 0 auto;
     
 }   
-.productos .carrusel div img{
+.carrusel div img{
     height: 400px;
 }         
 .productos .productosTarjetas div img{
     width: 296px;
     height: 200px;
 }       
-.productos form{
+.buscar form{
     display: flex;
     justify-content: center;
     padding-top: 30px;
@@ -141,11 +141,11 @@ header a{
     background-size: cover;
     font-size: 20px;
 }
-.productos form button{
+.buscar form button{
     background-color: rgb(163, 24, 163);
     border:solid 2px rgb(163, 24, 163);
 }
-.productos .buscar{
+.buscar form input{
     margin-right: 5px;
 }
 .formularioAyuda{
@@ -161,9 +161,21 @@ header a{
     font-size: 50px;
 }
 .carrito .tusProductos{
-    padding: 200px 100px;
-    border: solid 3px rgb(209, 27, 209);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    border: solid 2px rgb(141, 29, 141);
+    box-shadow: 1px 1px 12px -3px rgba(40,9,59,0.75) inset;
+    -webkit-box-shadow: 1px 1px 12px -3px rgba(40,9,59,0.75) inset;
+    -moz-box-shadow: 1px 1px 12px -3px rgba(40,9,59,0.75) inset;
     margin-bottom: 50px;
+}
+.carrito .tusProductos img{
+     width: 10%;
+     height: 35%;
 }
 
 .galeria{
@@ -182,35 +194,42 @@ header a{
 .gridItem1{
     grid-row: span 2;
 }
-.parent {
+.rastreo{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr ;
+    grid-auto-rows: 300px;
     gap: 15px;
     margin: 100px;
 }
-.parent .div2{
-    border:solid 3px purple;
-    padding: 5px; 
+.gridRastreo1{
+    grid-row: span 2;
+
 }
-.parent .div3{
-     padding-top: 150px;
+.gridRastreo2{
+    background-color: #BDE8F2;
+    padding: 10px;
 }
-.parent .div1 img{
-    height: 800px;
-    width: 500px;
+.gridRastreo2, .gridRastreo3{
+    display: grid;
+    place-items: center;
+}
+.rastreo img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
-
-.div1 { grid-area: 1 / 1 / 3 / 2; }
-.div2 { grid-area: 2 / 2 / 3 / 4; }
-.div3 { grid-area: 1 / 2 / 2 / 4; }
+.rastreo .gridRastreo3 {
+    border: solid 2px rgb(199, 31, 199);
+    box-shadow: 1px 1px 12px -3px rgba(40,9,59,0.75) inset;
+    -webkit-box-shadow: 1px 1px 12px -3px rgba(40,9,59,0.75) inset;
+    -moz-box-shadow: 1px 1px 12px -3px rgba(40,9,59,0.75) inset;
+}
 
 
 @media (max-width: 1000px){
     header{
         flex-direction: column;
-        align-items: fcenter;
+        align-items: center;
     }
     .productos .carrusel{
         width: 600px;
@@ -240,4 +259,4 @@ header a{
     padding: 2px 0;
     justify-content: space-around;
     align-items: center;
-  }
+}

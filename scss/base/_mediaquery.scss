@@ -1,0 +1,36 @@
+/*----Media---*/
+@media screen and (max-width: 1000px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .carrusel{
+        width: 600px;
+    }
+    .galeria{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px;
+    }
+    .rastreo{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 400px;
+    }
+}
+@media (max-width: 650px){
+    header{
+        position: relative;
+        nav {
+            ul{
+                display: inline-block
+            } 
+        }  
+    }
+    .carrusel{
+        width: 350px;
+        div{
+            img{
+                height: 200px;
+            }
+        }
+    }
+}

@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+  background-color: #fdfaf6; }
+
+.hero {
+  text-align: center;
+  width: 100%;
+  height: 30vh;
+  color: black;
+  background-image: url("../img/hero-imagen.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-top: 50px;
+  font-size: 20px;
+  margin-bottom: 100px; }
+
+.carrusel {
+  width: 990px;
+  margin: 0 auto; }
+  .carrusel div img {
+    height: 400px; }
+
+.formularioAyuda {
+  margin: 100px; }
+
+.titulo {
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  margin: 20px; }
+
+header {
+  background-color: #8d2ce9;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 50px;
+  z-index: 1;
+  box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 1px 10px 5px 0px rgba(0, 0, 0, 0.11); }
+  header a {
+    text-decoration: none; }
+  header h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    margin: 5px; }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    font-weight: 700;
+    padding-top: 10px; }
+    header nav ul li {
+      margin: 10px 15px 15px 10px;
+      font-size: 18px; }
+      header nav ul li a {
+        text-decoration: none;
+        color: #270825; }
+        header nav ul li a:hover {
+          color: antiquewhite;
+          transition: 0.3s; }
+
+.productos .productosTarjetas, .buscar form, .carrito .tusProductos {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/*------Main------*/
+.productos h2 {
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  font-weight: 700;
+  margin: 20px; }
+
+.productos a {
+  text-decoration: none; }
+
+.productos .productosTarjetas {
+  flex-wrap: wrap; }
+  .productos .productosTarjetas div {
+    width: 300px;
+    height: 250px;
+    margin: 30px;
+    text-align: center;
+    border: 2px solid blueviolet;
+    background-color: blueviolet; }
+    .productos .productosTarjetas div:hover {
+      transform: scale(1.1);
+      box-shadow: 1px 1px 36px 3px rgba(0, 0, 0, 0.59);
+      -webkit-box-shadow: 1px 1px 36px 3px rgba(0, 0, 0, 0.59);
+      -moz-box-shadow: 1px 1px 36px 3px rgba(0, 0, 0, 0.59);
+      transition: 0.2s; }
+    .productos .productosTarjetas div a {
+      text-decoration: none;
+      color: white;
+      font-weight: hind;
+      padding: 5px 10 px;
+      font-size: 20px; }
+    .productos .productosTarjetas div img {
+      width: 296px;
+      height: 200px; }
+
+.buscar form {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-image: url("../img/hero-imagen.jpg");
+  background-position: center;
+  background-size: cover;
+  font-size: 20px; }
+  .buscar form button {
+    background-color: #a318a3;
+    border: solid 2px #a318a3; }
+  .buscar form input {
+    margin-right: 5px; }
+
+.carrito {
+  margin: 100px;
+  font-weight: 700;
+  bottom: 0;
+  display: block; }
+  .carrito h2 {
+    font-size: 50px;
+    margin: 20px;
+    font-weight: 700; }
+  .carrito p {
+    margin: 20px; }
+  .carrito .tusProductos {
+    width: 100%;
+    height: 500px;
+    background-color: #f2f2f2;
+    border: solid 2px #c71fc7;
+    box-shadow: 1px 1px 12px -3px rgba(40, 9, 59, 0.75) inset;
+    -webkit-box-shadow: 1px 1px 12px -3px rgba(40, 9, 59, 0.75) inset;
+    -moz-box-shadow: 1px 1px 12px -3px rgba(40, 9, 59, 0.75) inset;
+    margin-bottom: 50px; }
+    .carrito .tusProductos img {
+      width: 10%;
+      height: 35%; }
+  .carrito .datos h3, .carrito .datos h4, .carrito .datos h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 27px; }
+  .carrito button {
+    background-color: #a318a3;
+    border: solid 2px #a318a3; }
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 250px;
+  gap: 15px;
+  margin: 100px; }
+  .galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.gridItem1 {
+  grid-row: span 2; }
+
+.rastreo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 300px;
+  gap: 15px;
+  margin: 100px; }
+
+.gridRastreo1 {
+  grid-row: span 2; }
+
+.gridRastreo2 {
+  background-color: #BDE8F2;
+  padding: 10px; }
+
+.gridRastreo2, .gridRastreo3 {
+  display: grid;
+  place-items: center; }
+
+.rastreo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.rastreo .gridRastreo3 {
+  border: solid 2px #c71fc7;
+  box-shadow: 1px 1px 12px -3px rgba(40, 9, 59, 0.75) inset;
+  -webkit-box-shadow: 1px 1px 12px -3px rgba(40, 9, 59, 0.75) inset;
+  -moz-box-shadow: 1px 1px 12px -3px rgba(40, 9, 59, 0.75) inset; }
+
+/*---------FOOTER----------*/
+.pie {
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  padding: 2px 0;
+  justify-content: space-around;
+  align-items: center; }
+
+/*----Media---*/
+@media screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    align-items: center; }
+  .carrusel {
+    width: 600px; }
+  .galeria {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 250px; }
+  .rastreo {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 400px; } }
+
+@media (max-width: 650px) {
+  header {
+    position: relative; }
+    header nav ul {
+      display: inline-block; }
+  .carrusel {
+    width: 350px; }
+    .carrusel div img {
+      height: 200px; } }

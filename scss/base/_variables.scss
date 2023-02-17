@@ -1,0 +1,17 @@
+//*variable 
+$color-borde: blueviolet;
+$color-box: rgb(199, 31, 199);
+
+//*Lista
+$font-size:
+20px,
+40px,
+50px,
+30px;
+
+//*Extends
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
