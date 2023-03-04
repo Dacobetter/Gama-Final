@@ -22,7 +22,19 @@ body{
     font-size: 20px;
     margin-bottom: 100px;
 }
-
+.buscador{
+    display: inline-block;
+    button{
+        background-color: rgb(163, 24, 163);
+        border:solid 2px rgb(163, 24, 163);
+    }
+    input{
+        margin-right: 5px;
+        font-size: inherit;
+        padding: 3px;
+        border: none;
+    }
+}    
 .carrusel{
     width: 990px;
     margin: 0 auto;
